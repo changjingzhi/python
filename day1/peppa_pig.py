@@ -19,7 +19,7 @@ def nose(x,y):
             left(3)
             forward(a)
         else:
-            a =a -0.09
+            a =a -0.08
             left(3)
             forward(a )
     end_fill()
@@ -152,7 +152,7 @@ def eyes(x,y):
 
 def cheek(x,y):
     """画脸颊"""
-    color((255,155,192))
+    color((255,10,0))
     penup()
     goto(x,y)
     pendown()

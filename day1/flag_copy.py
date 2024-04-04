@@ -1,20 +1,20 @@
 import turtle as tl
 
 def draw_rectangle(x,y,width,height):
-    tl.goto(x,y)
+    tl.goto(x,y) # 到x,y位置
     tl.pencolor('red')
     tl.fillcolor('red')
-    tl.begin_fill()
+    tl.begin_fill() # 填充颜色开始
     for i in range(2):
         tl.forward(width)
         tl.left(90)
         tl.forward(height)
         tl.left(90)
-    tl.end_fill()
+    tl.end_fill() # 填充颜色结束
 
 def draw_star(x,y,radius):
     tl.setpos(x,y)
-    pos1 = tl.pos()
+    pos1 = tl.pos() # pos 获取当前海龟的位置
     tl.circle(-radius,72)
     pos2 = tl.pos()
     tl.circle(-radius,72)

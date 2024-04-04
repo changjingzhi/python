@@ -37,10 +37,8 @@ def create_data_text(path,train_percent = 0.9):
             # 使用了 enumerate() 函数来遍历列表 flist 中的元素，同时获取元素的索引和值。具体来说，
             # enumerate(flist) 返回一个枚举对象，其中每个元素是一个元组，包含元素在列表中的索引和元素的值。
             if i < fnum * train_percent:
-
                 train_writer.writerow([os.path.join(path,dirname,filename),str(cls)])
             # 是将一个包含两个元素的列表写入CSV文件的操作。这个列表包含两个元素：
-
             # os.path.join(path,dirname,filename) 返回一个完整的文件路径，其中 path 是主目录路径，dirname 是子目录路径，filename 是文件名。这个路径表示要写入CSV文件的文件的完整路径。
             # str(cls) 将整数 cls 转换为字符串，cls 表示类别编号。
             else:
